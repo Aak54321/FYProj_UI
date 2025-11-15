@@ -1,0 +1,213 @@
+/* ============================
+   Medium-style body text
+============================ */
+
+.markdown {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.markdown p {
+  margin: 1.1rem 0;
+}
+
+/* Headings */
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.01em;
+  color: #111;
+  font-weight: 700;
+}
+
+.markdown h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-top: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.markdown h2 {
+  font-size: 1.6rem;
+  line-height: 1.35;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h3 {
+  font-size: 1.25rem;
+  line-height: 1.45;
+  margin-top: 1.8rem;
+  margin-bottom: 0.9rem;
+}
+
+/* Lists */
+.markdown ul,
+.markdown ol {
+  padding-left: 1.4rem;
+  margin: 1rem 0;
+}
+
+.markdown li {
+  margin-bottom: 0.4rem;
+}
+
+/* Blockquote */
+.markdown blockquote {
+  border-left: 4px solid #000;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #555;
+}
+
+/* Inline code pill */
+.mdv-code-pill {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  background: #f2f3f3;
+  color: #2d2d2d;
+  padding: 0.15rem 0.35rem;
+  border-radius: 5px;
+  font-size: 0.85em;
+  border: 1px solid #e2e2e2;
+  white-space: nowrap;
+}
+
+/* ============================
+   Code Blocks with Toolbar
+============================ */
+
+.mdv-code {
+  margin: 1.4rem 0;
+  font-family: var(--md-code-font);
+  font-size: var(--md-code-size);
+  line-height: 1.55;
+  color: #e5e7eb;
+}
+
+/* wrapper */
+.mdv-codeblock {
+  border: 1px solid #181d2a;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1.4rem 0;
+  box-shadow: 0 1px 0 #111825 inset, 0 0 0 1px #0b1221;
+}
+
+/* top bar */
+.mdv-codebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0b1221;
+  color: #aab4cf;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+/* language badge */
+.mdv-lang {
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #111a2e;
+  color: #c9d4f6;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-left: 2px;
+}
+
+/* copy btn */
+.mdv-copy {
+  appearance: none;
+  background: #101826;
+  color: #dbe3ff;
+  border: 1px solid #202a3f;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 4px 10px;
+  cursor: pointer;
+  margin-right: 2px;
+}
+.mdv-copy:hover {
+  background: #132038;
+}
+
+/* code area */
+.mdv-pre {
+  margin: 0;
+  background: #0b1221;
+  padding: 14px 18px 16px;
+  overflow: auto;
+  tab-size: 2;
+}
+.mdv-wrap {
+  white-space: pre-wrap;
+}
+
+/* ============================
+   Line Numbers
+============================ */
+
+.mdv-lines {
+  counter-reset: ln;
+  display: block;
+}
+.mdv-line {
+  counter-increment: ln;
+  display: block;
+  padding-left: 3.6em;
+  position: relative;
+}
+.mdv-line::before {
+  content: counter(ln);
+  position: absolute;
+  left: 0.8em;
+  width: 2.4em;
+  text-align: right;
+  color: #6b7280;
+}
+
+/* ============================
+   Tokens
+============================ */
+
+.hljs-keyword { color: #c678dd; font-weight: 700; }
+.hljs-string  { color: #98c379; }
+.hljs-number  { color: #d19a66; }
+.hljs-comment { color: #5c6370; font-style: italic; }
+.hljs-function{ color: #61afef; }
+.hljs-tag     { color: #e06c75; }
+.hljs-attr    { color: #d19a66; }
+.hljs-selector{ color: #e06c75; }
+.hljs-literal { color: #56b6c2; }
+
+/* ============================
+   Tables (Medium style)
+============================ */
+
+.mdv-table-wrap {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mdv-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mdv-th,
+.mdv-td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e6e6e6;
+}
+
+.mdv-thead th {
+  background: #fafafa;
+  font-weight: 600;
+}

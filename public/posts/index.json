@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "generatedAt": "2025-11-04T13:01:44.537743Z",
+  "items": [
+    {
+      "id": "synadia_and_tigerbeetle_commit_512k_usd_to_the_zig_software_",
+      "slug": "synadia_and_tigerbeetle_commit_512k_usd_to_the_zig_software_",
+      "title": "Synadia and TigerBeetle Commit $512k USD to the Zig Software Foundation",
+      "author": "derekcollison",
+      "score": 77,
+      "summary": "Synadia and TigerBeetle have together pledged a combined $512,000 USD to the Zig Software Foundation (ZSF) over the next two years, demonstrating a shared belief in Zig’s potential to shape the next e",
+      "url": "synadia_and_tigerbeetle_commit_512k_usd_to_the_zig_software__20251104_130203.json",
+      "createdAt": "2025-11-04T13:01:44.537743Z",
+      "updatedAt": "2025-11-04T13:01:44.537743Z"
+    },
+    {
+      "id": "react_vs_backbone_in_2025",
+      "slug": "react_vs_backbone_in_2025",
+      "title": "React vs. Backbone in 2025",
+      "author": "mjsu",
+      "score": 134,
+      "summary": "Look at the two implementations above. The code is roughly the same length. They do exactly the same thing. One was written with a framework from 2010, the other with a framework that's had countless ",
+      "url": "react_vs_backbone_in_2025_20251104_130235.json",
+      "createdAt": "2025-11-04T13:01:44.537743Z",
+      "updatedAt": "2025-11-04T13:01:44.537743Z"
+    },
+    {
+      "id": "making_a_micro_linux_distro_2023",
+      "slug": "making_a_micro_linux_distro_2023",
+      "title": "Making a micro Linux distro (2023)",
+      "author": "turrini",
+      "score": 27,
+      "summary": "In this article, we’ll talk about building up a tiny (micro) Linux “distribution” from scratch. This distribution really won’t do much, but it will be built from scratch.\nWe will build the Linux kerne",
+      "url": "making_a_micro_linux_distro_2023_20251104_130302.json",
+      "createdAt": "2025-11-04T13:01:44.537743Z",
+      "updatedAt": "2025-11-04T13:01:44.537743Z"
+    },
+    {
+      "id": "the_great_saas_gaslight",
+      "slug": "the_great_saas_gaslight",
+      "title": "The Great SaaS Gaslight",
+      "author": "unworkableideas",
+      "score": 38,
+      "summary": "Maybe they meant it when they said it, but it is not the driving force behind the great SaaS purveyors of our day. Yeah, I am looking at you Microsoft, you too Google, and where do you think you’re hi",
+      "url": "the_great_saas_gaslight_20251104_130324.json",
+      "createdAt": "2025-11-04T13:01:44.537743Z",
+      "updatedAt": "2025-11-04T13:01:44.537743Z"
+    },
+    {
+      "id": "the_future_of_python_web_services_looks_gil-free",
+      "slug": "the_future_of_python_web_services_looks_gil-free",
+      "title": "The future of Python web services looks GIL-free",
+      "author": "gi0baro-dev",
+      "score": 39,
+      "summary": "Python 3.14 was released at the beginning of the month. This release was particularly interesting to me because of the improvements on the \"free-threaded\" variant of the interpreter.\nSpecifically, the",
+      "url": "the_future_of_python_web_services_looks_gil-free_20251104_130353.json",
+      "createdAt": "2025-11-04T13:01:44.537743Z",
+      "updatedAt": "2025-11-04T13:01:44.537743Z"
+    }
+  ]
+}
