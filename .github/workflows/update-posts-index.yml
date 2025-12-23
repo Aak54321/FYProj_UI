@@ -1,0 +1,43 @@
+name: Update posts index
+
+on:
+  push:
+    paths:
+      - 'public/posts/*.json'
+      - '!public/posts/index.json'
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build posts index
+        run: node scripts/update-posts-index.js
+
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add public/posts/index.json
+            git commit -m "chore: update posts index [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi
