@@ -198,7 +198,9 @@ function ArticleCard({ item, onOpen }: { item: IndexItem; onOpen: () => void }) 
       <Metadata item={item} compact />
       {item.summary && (
         <p style={{ margin: 0, color: "#475569", fontSize: 14, lineHeight: 1.45 }}>
-          {item.summary}…
+          {item.summary.length > 120
+            ? `${item.summary.substring(0, 120)}...`
+            : item.summary}
         </p>
       )}
       <button
