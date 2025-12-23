@@ -4,8 +4,7 @@ on:
   push:
     paths:
       - 'public/posts/*.json'
-    paths-ignore:
-      - 'public/posts/index.json'
+      - '!public/posts/index.json'
 
 permissions:
   contents: write
