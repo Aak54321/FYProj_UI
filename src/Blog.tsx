@@ -28,7 +28,7 @@ export default function Blog() {
         setItems(data.items);
         if (data.items.length > 0) setSelected(data.items[0]);
       })
-      .catch(err => setError("failed loading index"));
+      .catch(() => setError("failed loading index"));
   }, []);
 
   // load selected post
@@ -51,7 +51,7 @@ export default function Blog() {
 
   return (
     <div style={{ display: "grid", gridTemplateColumns: "250px 1fr", gap: 16, padding: 16 }}>
-      
+
       <aside style={{ borderRight: "1px solid #ddd", paddingRight: 12 }}>
         <h3>Posts</h3>
         <ul style={{ listStyle: "none", padding: 0 }}>
