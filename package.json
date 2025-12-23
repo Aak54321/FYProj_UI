@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update-index": "node scripts/update-posts-index.js"
   },
   "devDependencies": {
     "@types/react-dom": "^19.2.2",
